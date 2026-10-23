@@ -43,7 +43,7 @@ System Zarządzania Hotelem wspomaga proces obsługi gości, rezerwacji oraz roz
 ---
 
 ### US 5: Wymeldowanie i wystawienie faktury
-* **Typ operacji:** Tworzenie / transakcja & Logika biznesowa
+* **Typ operacji:** Tworzenie / transakcja, Logika biznesowa
 * **Jako** Recepcjonista
 * **chcę** wymeldować gościa i wygenerować fakturę końcową,
 * **aby** rozliczyć pobyt, pobrać opłatę i zwolnić pokój.
