@@ -12,10 +12,10 @@
 * **Powiązanie z User Story:** Odpowiada drugiej historii użytkownika (US 2: tworzenie / transakcja).
 
 ## 3. Dołącz usługę dodatkową
-* **Aktor:** brak bezpośredniego aktora — UC inicjowany przez system jako rozszerzenie UC2
-* **Opis:** W trakcie procesu rezerwacji system umożliwia opcjonalne dołączenie usług dodatkowych (miejsce parkingowe lub śniadanie z określonym typem diety), co rozszerza rezerwację o polimorficzne obiekty usług i wpływa na łączny koszt pobytu.
+* **Aktor:** brak bezpośredniego aktora 
+* **Opis:** W trakcie procesu rezerwacji system umożliwia opcjonalne dołączenie usług dodatkowych (miejsce parkingowe lub śniadanie z określonym typem diety) i wpływa na łączny koszt pobytu.
 * **Relacje:** Rozszerza (`<<extend>>`) przypadek użycia „Złóż rezerwację pokoju".
-* **Powiązanie z opisem systemu:** Wynika bezpośrednio z założeń biznesowych projektu, metody `dodajUsluge` w klasie `Rezerwacja` oraz polimorficznej hierarchii `UslugaDodatkowa` (`Parking`, `Sniadanie`).
+* **Powiązanie z opisem systemu:** Wynika bezpośrednio z założeń biznesowych projektu, metody `dodajUsluge` w klasie `Rezerwacja`.
 
 ## 4. Sprawdź status rezerwacji
 * **Aktorzy:** Gość, Recepcjonista
@@ -39,7 +39,7 @@
 * **Powiązanie z User Story:** Odpowiada piątej historii użytkownika (US 5: zarządcza / transakcja).
 
 ## 8. Wydrukuj fakturę
-* **Aktor:** brak bezpośredniego aktora — UC inicjowany przez system jako część UC7
+* **Aktor:** brak bezpośredniego aktora 
 * **Opis:** System generuje i drukuje fakturę podsumowującą pobyt, prezentując numer faktury, datę wystawienia, łączną kwotę do zapłaty za pobyt, rozbicie na usługi dodatkowe oraz ewentualną opłatę manipulacyjną.
 * **Relacje:** Zawierany (`<<include>>`) przez przypadek użycia „Wymelduj gościa".
 * **Powiązanie z opisem systemu:** Wynika bezpośrednio z klasy `Faktura`, jej atrybutów oraz metod `drukujFakture()` i `getKwotaLaczna()`. Faktura jest zwracana przez `wymeldujGoscia()` w `SystemHotelu` — nie istnieje jako osobna operacja dostępna z zewnątrz.
