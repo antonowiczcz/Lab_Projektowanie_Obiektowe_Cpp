@@ -7,7 +7,7 @@
 
 ## 2. Złóż rezerwację pokoju
 * **Aktor:** Gość, Recepcjonista
-* **Opis:** Gość inicjuje proces rezerwacji wybranego pokoju na określony termin. System rejestruje rezerwację przypisaną do gościa, blokuje pokój na dany okres, nadaje rezerwacji unikalny identyfikator oraz ustawia jej status początkowy.
+* **Opis:** Gość lub Recepcjonista inicjuje proces rezerwacji wybranego pokoju na określony termin. System rejestruje rezerwację przypisaną do gościa, blokuje pokój na dany okres, nadaje rezerwacji unikalny identyfikator oraz ustawia jej status początkowy.
 * **Relacje:** Rozszerzany (`<<extend>>`) przez przypadek użycia „Dołącz usługę dodatkową".
 * **Powiązanie z User Story:** Odpowiada drugiej historii użytkownika (US 2: tworzenie / transakcja).
 
