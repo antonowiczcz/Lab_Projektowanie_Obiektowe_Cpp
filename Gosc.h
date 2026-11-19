@@ -10,5 +10,8 @@ private:
     string numerDokumentu;
 
 public:
+    Gosc(int id, string imie, string nazwisko, string numerTelefonu, string email, string numerDokumentu);
+
     string getEmail();
+    string getNumerDokumentu();
 };
