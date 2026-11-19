@@ -10,5 +10,8 @@ private:
     string zmiana;
 
 public:
+    Recepcjonista(int id, string imie, string nazwisko, string numerTelefonu, string idPracownika, string zmiana);
+
     string getIdPracownika();
+    string getZmiana();
 };

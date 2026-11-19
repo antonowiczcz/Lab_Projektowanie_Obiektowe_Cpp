@@ -11,6 +11,7 @@ protected:
     string numerTelefonu;
 
 public:
+    Osoba(int id, string imie, string nazwisko, string numerTelefonu);
     virtual ~Osoba() = default;
 
     int getId();

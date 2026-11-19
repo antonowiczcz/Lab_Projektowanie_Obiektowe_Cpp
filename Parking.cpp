@@ -1,5 +1,13 @@
 #include "Parking.h"
 
+Parking::Parking(int numerMiejsca, double cenaZaDobe)
+    : UslugaDodatkowa("Parking", cenaZaDobe), numerMiejsca(numerMiejsca) {
+}
+
 double Parking::obliczKoszt(int liczbaDni) {
-    return 0.0;
+    return cenaPodstawowa * liczbaDni;
+}
+
+int Parking::getNumerMiejsca() {
+    return numerMiejsca;
 }
