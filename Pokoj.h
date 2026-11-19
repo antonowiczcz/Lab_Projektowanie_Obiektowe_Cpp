@@ -11,9 +11,14 @@ private:
     string status;
 
 public:
-    bool czyWolny();
+    Pokoj(int numerPokoju, string standard, double cenaZaDobe, string status = "Wolny");
+
+    bool czyWolny() const;
     void zablokuj();
     void zwolnij();
-    double getCenaZaDobe();
-    int getNumerPokoju();
+    double getCenaZaDobe() const;
+    int getNumerPokoju() const;
+    string getStandard() const;
+    string getStatus() const;
+    void setStatus(string nowyStatus);
 };

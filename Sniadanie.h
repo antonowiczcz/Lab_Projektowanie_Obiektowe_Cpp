@@ -9,5 +9,8 @@ private:
     string typDiety;
 
 public:
+    Sniadanie(string typDiety, double cenaZaDobe = 40.0);
+
     double obliczKoszt(int liczbaDni) override;
+    string getTypDiety();
 };
