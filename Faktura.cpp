@@ -1,6 +1,6 @@
 #include "Faktura.h"
 #include <iostream>
-#include <iomanip>
+#include <cstdio>
 
 Faktura::Faktura(string numerFaktury, string dataWystawienia, double kwotaLaczna, double oplataManipulacyjna, string daneGoscia, int nrPokoju)
     : numerFaktury(numerFaktury), dataWystawienia(dataWystawienia),
@@ -42,10 +42,9 @@ void Faktura::drukujFakture() const {
     if (nrPokoju > 0) {
         cout << " Dotyczy pokoju:   nr " << nrPokoju << endl;
     }
-    cout << fixed << setprecision(2);
-    cout << " Kwota laczna:     " << kwotaLaczna << " PLN" << endl;
+    printf(" Kwota laczna:     %.2f PLN\n", kwotaLaczna);
     if (oplataManipulacyjna > 0.0) {
-        cout << " W tym oplata man.: " << oplataManipulacyjna << " PLN" << endl;
+        printf(" W tym oplata man.: %.2f PLN\n", oplataManipulacyjna);
     }
     cout << "========================================" << endl;
 }
